@@ -12,4 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .copy('vendor/almasaeed2010/adminlte/plugins', 'public/adminlte/plugins')
+    .copy('vendor/almasaeed2010/adminlte/dist', 'public/adminlte/dist')
     .sass('resources/sass/app.scss', 'public/css');
