@@ -8,7 +8,4 @@
         </a>
     </li>
     @endsection
-    @component('components.form_delete',['action'=>'/2'])
-    @endcomponent
-
 @endsection
