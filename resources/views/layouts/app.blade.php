@@ -17,8 +17,6 @@
     <!-- Styles -->
     @include('components.styles')
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini">

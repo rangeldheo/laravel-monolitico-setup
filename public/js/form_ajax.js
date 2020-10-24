@@ -54,6 +54,18 @@ function formAjax(formAjaxElement = '.form-ajax') {
                 //econdemos os feedbacks anteriores
                 $('.invalid-feedback').hide();
             },
+            error: function (data) {               
+                $(load).addClass('d-none');
+                var response = JSON.parse(data.responseText);
+                //percorremos os erros e de acordo com o 'name' ou 'pseudoname' do campo
+                //associamos o erro ao seu input de origem                
+                $.each(response.errors, function (index, obj) {
+                    formAjax.find('*[name=' + index +
+                            '],*[data-pseudoname=' + index + ']')
+                        .siblings('.invalid-feedback').html(obj[0])
+                        .show();
+                });
+            },
             success: function (response) {
                 //desativamos o load do formulario
                 //Ativamos o load do formulario

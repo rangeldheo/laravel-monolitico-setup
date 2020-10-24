@@ -8,8 +8,7 @@
     href="{{ asset('adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
 <!-- JQVMap -->
 <link rel="stylesheet" href="{{ asset('adminlte/plugins/jqvmap/jqvmap.min.css') }}">
-<!-- Theme style -->
-<link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css') }}">
+
 <!-- overlayScrollbars -->
 <link rel="stylesheet"
     href="{{ asset('adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
@@ -20,5 +19,9 @@
 <link rel="stylesheet" href="{{ asset('adminlte/plugins/summernote/summernote-bs4.css') }}">
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+<!-- Css Custom -->
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
 @stack('sytle_priority')
 @stack('style')
