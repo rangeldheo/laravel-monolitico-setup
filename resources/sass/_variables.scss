@@ -2,18 +2,29 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Nunito',
+sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$coffe:#6f5f5c;
+$coffe-light : #825d5b;
+$capuccino : #a26b61;
+$capuccino-light : #e38f71;
+$mocha : #f0b270;
+
+
+$alternate: $capuccino !default;
+$contrast: $capuccino-light !default;
+$opposite: $mocha !default;
+
+$theme-colors: ("coffe" : $coffe,
+    "coffe-light" : $coffe-light,
+    "capuccino" : $capuccino,
+    "capuccino-light" : $capuccino-light,
+    "mocha" : $mocha,
+    "alternate" : $alternate,
+    "contrast" : $contrast,
+    "opposite" : $opposite,
+);
